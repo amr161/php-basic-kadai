@@ -45,13 +45,23 @@
             echo $this->height . PHP_EOL;
         }
     }
-
     // インスタンスの作成とメソッドの呼び出し
+    
+
     $food = new Food("potato", 250);
-    $food->show_price(); // 250
+    print_r($food);
+    echo '<br>';
 
     $animal = new Animal("dog", 60, 5000);
+    print_r($animal);
+    echo '<br>';
+
+
+    $food->show_price(); // 250
+    echo '<br>';
+
     $animal->show_height(); // 60
+    echo '<br>';
 
     ?>
 </body>
